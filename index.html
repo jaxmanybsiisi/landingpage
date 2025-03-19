@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tequila Express</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Gilda+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Gilda+Display&display=swap"
+        rel="stylesheet">
     <!-- <script src="https://kit.fontawesome.com/68fb0612ae.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -78,6 +79,7 @@
         .btn-custom:hover {
             background: #c96a5f;
             color: #f4eee1;
+            border-color: #c96a5f;
         }
 
         .btn-custom-dos {
@@ -132,16 +134,19 @@
             margin: 0 auto;
 
         }
+
         .list-group-item {
             border: none;
             padding: 2px 0;
-            font-size: 10px;
+            font-size: 12px;
             background: #F4EEE1;
         }
+
         .list-group-item i {
             margin-right: 10px;
             color: #0B2240;
         }
+
         /* .checked {
             color: #6ea399;
         }
@@ -159,7 +164,7 @@
 
         .clase-viaje {
             text-align: center;
-            padding: 0 40px;
+            padding: 0 50px;
             /* margin: 10px; */
             /* max-width: 400px; */
             /* border: 1px solid #f10505; */
@@ -168,7 +173,7 @@
         .clase-viaje img {
             max-width: 100%;
             /* height: auto; */
-            height: 200px;
+            height: 225px;
             border-radius: 25px;
             margin-bottom: 15px;
         }
@@ -184,20 +189,36 @@
             align-items: center;
             justify-content: left;
         }
+
         /* 
         .clase-viaje span {
             margin-right: 10px;
         } */
-         table thead {
-            font-size: 18px;
+        table {
             color: #0B2240;
-            font-weight: bold;
-         }
-         table tbody {
+            /* font-size: 18px; */
+            /* font-weight: bold; */
+        }
+        table thead {
             font-size: 18px;
+            font-weight: bold;
+            color: #0B2240;
+        }
+
+        table tbody {
+            font-size: 14px;
             color: #0B2240;
             /* font-weight: bold; */
-         }
+        }
+
+        table th, table td {
+            padding: 0px !important;
+            border: none;
+            text-align: left;
+        }
+        .text-12 {
+            font-size: 12px;
+        }
 
 
 
@@ -206,7 +227,7 @@
 
 <body>
 
-    <!-- <div class="video-container">
+    <div class="video-container">
         Video de fondo
         <video autoplay muted loop playsinline>
             <source src="assets/GMXT_TEQUILA__V1-0010.mov" type="video/mp4">
@@ -225,8 +246,14 @@
                     </div>
                     <div class="col-8 d-flex justify-content-end">
                         <div>
-                            <button class="btn btn-custom-dos me-4"><i class="fa-brands fa-whatsapp me-1"></i></i>Contáctanos</button>
-                            <button class="btn btn-custom">Reservar</button>
+                            <a href="tel:3317904289">
+                                <button class="btn btn-custom-dos me-4"><i class="fa-brands fa-whatsapp me-1"></i>Contáctanos</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="tel:3317904289">
+                                <button class="btn btn-custom">Reservar</button>
+                            </a>
                         </div>
                     </div>
 
@@ -248,10 +275,10 @@
             </section>
 
         </div>
-    </div> -->
+    </div>
 
     <div class="container py-5">
-        <!-- <div class="text-center">
+        <div class="text-center">
             <h4>Disfruta del paisaje agavero desde la</h4>
             <h2 class="fw-bold">comodidad de nuestros vagones de lujo</h2>
         </div>
@@ -274,7 +301,8 @@
                             <i class="fas fa-users"></i> Vagón solo para mayores de edad
                         </li>
                         <li class="list-group-item">
-                            <i class="fas fa-cocktail"></i> Destilados y cocteles en barra libre <br> *No incluidos en el precio del boleto
+                            <i class="fas fa-cocktail"></i> Destilados y cocteles en barra libre <br> *No incluidos en
+                            el precio del boleto
                         </li>
                         <li class="list-group-item">
                             <i class="fas fa-lock"></i> Acceso al bar (viernes y domingo)
@@ -301,7 +329,8 @@
                             <i class="fas fa-users"></i> Vagón familiar
                         </li>
                         <li class="list-group-item">
-                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o a la carta (no incluidos en el precio del boleto)
+                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o
+                            a la carta (no incluidos en el precio del boleto)
                         </li>
                     </ul>
                 </div>
@@ -325,18 +354,19 @@
                             <i class="fas fa-users"></i> Vagón familiar
                         </li>
                         <li class="list-group-item">
-                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o a la carta (no incluidos en el precio del boleto)
+                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o
+                            a la carta (no incluidos en el precio del boleto)
                         </li>
                     </ul>
                 </div>
 
             </div>
-        </div> -->
-        <div class="row">
+        </div>
+        <div class="row mt-4">
             <div class="col-6">
-                <h4><span class="highlight fw-bold">TARIFA EXCLUSIVAMENTE TRANSPORTE</span></h4>
+                <h5><span class="highlight fw-bold">TARIFA EXCLUSIVAMENTE TRANSPORTE</span></h5>
                 <div class="table-responsive">
-                    <table class="table table-custom">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th colspan="1"></th>
@@ -351,16 +381,62 @@
                                 <td>$2,200 mxn IVA inc.</td>
                             </tr>
                             <tr>
-                                <td>Clase ejecutiva</td>
+                                <td>Clase Ejecutiva</td>
                                 <td>$1,150 mxn IVA inc.</td>
                                 <td>$1,785 mxn IVA inc.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
             </div>
-            <div class="col-4">
-                
+            <div class="col-6">
+
+                <h5><span class="highlight fw-bold">TARIFA DE EXPERIENCIA INTEGRAL</span></h5>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Tour Casa Sauza</th>
+                                <th></th>
+                                <th>Redondo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="text-12">Descubre la ruta del tequila en colaboración con</td>
+                                <td>Primera Clase</td>
+                                <td>$3,900 mxn IVA inc.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">Casa Sauza, donde la cultura y la gastronomía se</td>
+                                <td>Bar</td>
+                                <td>$3,900 mxn IVA inc.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">entrelazan. Disfruta de exquisita coctelería y de</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">un espectáculo artístico que captura la esencia de</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">México y sus tradiciones. (Únicamente sábados)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-6">
+                <a href="tel:3317904289">
+                    <button class="btn btn-custom">COMPRAR</button>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="tel:3317904289">
+                    <button class="btn btn-custom">COMPRAR</button>
+                </a>
             </div>
 
         </div>
