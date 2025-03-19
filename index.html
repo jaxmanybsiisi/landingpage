@@ -204,6 +204,9 @@
         .table-height {
             height: 150px;
         }
+        .table-height-sm {
+            height: auto;
+        }
         table {
             color: #0B2240;
             /* font-size: 18px; */
@@ -388,7 +391,30 @@
         <div class="row mt-4">
             <div class="col-12 col-xl-6 mb-4">
                 <h5><span class="secondary-custom fw-bold">TARIFA EXCLUSIVAMENTE TRANSPORTE</span></h5>
-                <div class="table-responsive table-height">
+                <div class="table-responsive table-height-sm d-block d-xl-none">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="1"></th>
+                                <th>Sencillo</th>
+                                <th>Redondo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Primera Clase</td>
+                                <td>$1,400 mxn IVA inc.</td>
+                                <td>$2,200 mxn IVA inc.</td>
+                            </tr>
+                            <tr>
+                                <td>Clase Ejecutiva</td>
+                                <td>$1,150 mxn IVA inc.</td>
+                                <td>$1,785 mxn IVA inc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive table-height d-none d-xl-block">
                     <table class="table">
                         <thead>
                             <tr>
@@ -419,7 +445,39 @@
             <div class="col-12 col-xl-6 mb-4">
 
                 <h5><span class="secondary-custom fw-bold">TARIFA DE EXPERIENCIA INTEGRAL</span></h5>
-                <div class="table-responsive table-height">
+                <div class="table-responsive table-height d-block d-sm-none">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Tour Casa Sauza</th>
+                                <th></th>
+                                <th>Redondo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="text-12">Descubre la ruta del tequila en colaboración con</td>
+                                <td>Primera Clase</td>
+                                <td>$3,900 mxn IVA inc.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">Casa Sauza, donde la cultura y la gastronomía se</td>
+                                <td>Bar</td>
+                                <td>$3,900 mxn IVA inc.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">entrelazan. Disfruta de exquisita coctelería y de</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">un espectáculo artístico que captura la esencia de</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-12">México y sus tradiciones. (Únicamente sábados)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive table-height-sm d-none d-sm-block">
                     <table class="table">
                         <thead>
                             <tr>
