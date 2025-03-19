@@ -53,7 +53,7 @@
             z-index: 2;
             color: #f4eee1;
             /* text-align: center; */
-            padding: 50px;
+            padding: 30px 50px;
         }
 
         /* Sombreado */
@@ -96,11 +96,11 @@
             border-color: #c96a5f;
         }
 
-        .highlight {
+        .secondary-custom {
             color: #6ea399;
         }
 
-        .special-offer {
+        .primary-custom {
             color: #c96a5f;
             font-weight: bold;
         }
@@ -165,7 +165,7 @@
         .clase-viaje {
             text-align: center;
             padding: 0 50px;
-            /* margin: 10px; */
+            margin-top: 10px;
             /* max-width: 400px; */
             /* border: 1px solid #f10505; */
         }
@@ -194,6 +194,9 @@
         .clase-viaje span {
             margin-right: 10px;
         } */
+        .table-height {
+            height: 150px;
+        }
         table {
             color: #0B2240;
             /* font-size: 18px; */
@@ -228,23 +231,20 @@
 <body>
 
     <div class="video-container">
-        Video de fondo
         <video autoplay muted loop playsinline>
             <source src="assets/GMXT_TEQUILA__V1-0010.mov" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
 
-        Capa oscura para mejorar el contraste
         <div class="video-overlay"></div>
 
-        Contenido sobre el video
         <div class="content">
             <header class="text-left mb-5">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row mb-4">
+                    <div class="col-12 col-sm-6 d-flex justify-content-start">
                         <img src="assets/logoTequilaPng.png" alt="Tequila Express" width="80%" class="mb-3">
                     </div>
-                    <div class="col-8 d-flex justify-content-end">
+                    <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end">
                         <div>
                             <a href="tel:3317904289">
                                 <button class="btn btn-custom-dos me-4"><i class="fa-brands fa-whatsapp me-1"></i>Contáctanos</button>
@@ -256,15 +256,14 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
                 <h2>UN VIAJE QUE DEBERÍA TENER </h2>
-                <h1><span class="highlight fw-bold">DENOMINACIÓN DE ORIGEN</span></h1>
+                <h1><span class="secondary-custom fw-bold">DENOMINACIÓN DE ORIGEN</span></h1>
                 <h3><span class="underline-custom">Vuelve el mejor</span> tren de la región agavera</h3>
             </header>
             <section class="text-left">
-                <h4>¿Eres <span class="highlight">mayorista</span> o cuentas con una</h4>
-                <h2 class="highlight fw-bold">agencia de viajes ?</h2>
+                <h4>¿Eres <span class="secondary-custom">mayorista</span> o cuentas con una</h4>
+                <h2 class="secondary-custom fw-bold">agencia de viajes ?</h2>
                 <h2 class="fw-bold">¡Tenemos tarifas especiales para ti!</h2>
                 <span>Contáctanos para:</span>
                 <ul>
@@ -283,8 +282,8 @@
             <h2 class="fw-bold">comodidad de nuestros vagones de lujo</h2>
         </div>
         <div class="row">
-            <div class="col-4 clase-viaje">
-                <h4 class="special-offer">Primera Clase</h4>
+            <div class="col-12 col-md-6 col-lg-4 clase-viaje">
+                <h4 class="primary-custom">Primera Clase</h4>
                 <img src="assets/primera_calse.jpg" alt="Primera Clase">
                 <div class="card-custom">
                     <ul class="list-group">
@@ -311,8 +310,8 @@
                 </div>
 
             </div>
-            <div class="col-4 clase-viaje">
-                <h4 class="special-offer">Clase Ejecutiva</h4>
+            <div class="col-12 col-md-6 col-lg-4 clase-viaje">
+                <h4 class="primary-custom">Clase Ejecutiva</h4>
                 <img src="assets/clase_ejecutiva.jpg" alt="Clase Ejecutiva">
                 <div class="card-custom">
                     <ul class="list-group">
@@ -336,8 +335,8 @@
                 </div>
 
             </div>
-            <div class="col-4 clase-viaje">
-                <h4 class="special-offer">Vagón Bar</h4>
+            <div class="col-12 col-md-6 col-lg-4 clase-viaje">
+                <h4 class="primary-custom">Vagón Bar</h4>
                 <img src="assets/vagon_bar.jpg" alt="Vagón Bar">
                 <div class="card-custom">
                     <ul class="list-group">
@@ -363,9 +362,9 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-6">
-                <h5><span class="highlight fw-bold">TARIFA EXCLUSIVAMENTE TRANSPORTE</span></h5>
-                <div class="table-responsive">
+            <div class="col-12 col-xl-6 mb-4">
+                <h5><span class="secondary-custom fw-bold">TARIFA EXCLUSIVAMENTE TRANSPORTE</span></h5>
+                <div class="table-responsive table-height">
                     <table class="table">
                         <thead>
                             <tr>
@@ -388,12 +387,15 @@
                         </tbody>
                     </table>
                 </div>
+                <a href="tel:3317904289">
+                    <button class="btn btn-custom">COMPRAR</button>
+                </a>
 
             </div>
-            <div class="col-6">
+            <div class="col-12 col-xl-6">
 
-                <h5><span class="highlight fw-bold">TARIFA DE EXPERIENCIA INTEGRAL</span></h5>
-                <div class="table-responsive">
+                <h5><span class="secondary-custom fw-bold">TARIFA DE EXPERIENCIA INTEGRAL</span></h5>
+                <div class="table-responsive table-height">
                     <table class="table">
                         <thead>
                             <tr>
@@ -425,18 +427,13 @@
                         </tbody>
                     </table>
                 </div>
-
-            </div>
-
-            <div class="col-6">
                 <a href="tel:3317904289">
                     <button class="btn btn-custom">COMPRAR</button>
                 </a>
             </div>
-            <div class="col-6">
-                <a href="tel:3317904289">
-                    <button class="btn btn-custom">COMPRAR</button>
-                </a>
+
+            <div class="text-center fw-bold">
+                <span style="font-size: 18px;">*Paquetes de transporte + visita a destilerías <span class="primary-custom"> PRÓXIMAMENTE</span></span>
             </div>
 
         </div>
