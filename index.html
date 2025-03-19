@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tequila Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Gilda+Display&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/68fb0612ae.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #0B2240;
+            background: #F4EEE1;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Gilda Display', serif;
+        }
+
+        .text-custom-primary {
+            color: #0B2240;
+        }
+
+        /* Contenedor ocupe toda la pantalla */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* El video cubre toda la pantalla */
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Contenido encima del video */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: #f4eee1;
+            /* text-align: center; */
+            padding: 50px;
+        }
+
+        /* Sombreado */
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Oscurece el video */
+            z-index: 1;
+        }
+
+        .btn-custom {
+            background: #6ea399;
+            color: white;
+            border: 2px solid #6ea399;
+            width: 150px;
+            /* height: 40px; */
+        }
+
+        .btn-custom:hover {
+            background: #c96a5f;
+            color: #f4eee1;
+        }
+
+        .btn-custom-dos {
+            /* background: #6ea399; */
+            color: white;
+            border: 2px solid #6ea399;
+            width: 150px;
+            /* height: 40px; */
+        }
+
+        .btn-custom-dos:hover {
+            background: #c96a5f;
+            color: #f4eee1;
+            border-color: #c96a5f;
+        }
+
+        .highlight {
+            color: #6ea399;
+        }
+
+        .special-offer {
+            color: #c96a5f;
+            font-weight: bold;
+        }
+
+        .underline-custom {
+            position: relative;
+            display: inline-block;
+            /* Asegura que el ancho sea el del texto */
+        }
+
+        .underline-custom::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            /* Ajusta la posición de la línea */
+            width: 100%;
+            /* Mismo ancho que el texto */
+            height: 2px;
+            /* Grosor de la línea */
+            background-color: #ffffff;
+            /* Color de la línea */
+        }
+
+        .card-custom {
+            /* background-color: #ffffff; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            text-align: left;
+            /* padding: 20px; */
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
+        .list-group-item {
+            border: none;
+            padding: 2px 0;
+            font-size: 10px;
+            background: #F4EEE1;
+        }
+        .list-group-item i {
+            margin-right: 10px;
+            color: #0B2240;
+        }
+        /* .checked {
+            color: #6ea399;
+        }
+        .unchecked {
+            color: #c96a5f;
+        } */
+
+        /* .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        } */
+
+        .clase-viaje {
+            text-align: center;
+            padding: 0 40px;
+            /* margin: 10px; */
+            /* max-width: 400px; */
+            /* border: 1px solid #f10505; */
+        }
+
+        .clase-viaje img {
+            max-width: 100%;
+            /* height: auto; */
+            height: 200px;
+            border-radius: 25px;
+            margin-bottom: 15px;
+        }
+
+        .clase-viaje ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .clase-viaje li {
+            /* margin-bottom: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        /* 
+        .clase-viaje span {
+            margin-right: 10px;
+        } */
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="video-container">
+        Video de fondo
+        <video autoplay muted loop playsinline>
+            <source src="assets/GMXT_TEQUILA__V1-0010.mov" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        Capa oscura para mejorar el contraste
+        <div class="video-overlay"></div>
+
+        Contenido sobre el video
+        <div class="content">
+            <header class="text-left mb-5">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assets/logoTequilaPng.png" alt="Tequila Express" width="80%" class="mb-3">
+                    </div>
+                    <div class="col-8 d-flex justify-content-end">
+                        <div>
+                            <button class="btn btn-custom-dos me-4"><i class="fa-brands fa-whatsapp me-1"></i></i>Contáctanos</button>
+                            <button class="btn btn-custom">Reservar</button>
+                        </div>
+                    </div>
+
+                </div>
+                <h2>UN VIAJE QUE DEBERÍA TENER </h2>
+                <h1><span class="highlight fw-bold">DENOMINACIÓN DE ORIGEN</span></h1>
+                <h3><span class="underline-custom">Vuelve el mejor</span> tren de la región agavera</h3>
+            </header>
+            <section class="text-left">
+                <h4>¿Eres <span class="highlight">mayorista</span> o cuentas con una</h4>
+                <h2 class="highlight fw-bold">agencia de viajes ?</h2>
+                <h2 class="fw-bold">¡Tenemos tarifas especiales para ti!</h2>
+                <span>Contáctanos para:</span>
+                <ul>
+                    <li>Realizar un viaje de familiarización para el equipo de ventas</li>
+                    <li>Tener una capacitación</li>
+                    <li>Obtener materiales para la difusión del viaje</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="text-center">
+            <h4>Disfruta del paisaje agavero desde la</h4>
+            <h2 class="fw-bold">comodidad de nuestros vagones de lujo</h2>
+        </div>
+        <div class="row">
+            <!-- <div class="col-4 special-offer">
+                <h4 class="fw-bold">Primera Clase</h4>
+                <div class="col-4">
+                    <img src="assets/primera_calse.jpg" alt="Primera Clase" class="imagenes mb-3">
+                </div>
+            </div> -->
+            <div class="col-4 clase-viaje">
+                <h4 class="special-offer">Primera Clase</h4>
+                <img src="assets/primera_calse.jpg" alt="Primera Clase">
+                <div class="card-custom">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i> 52 pasajeros
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-music"></i> Luces, sonido y pantallas
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-chair"></i> Asiento de piel en formato sala
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-users"></i> Vagón solo para mayores de edad
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cocktail"></i> Destilados y cocteles en barra libre <br> *No incluidos en el precio del boleto
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-lock"></i> Acceso al bar (viernes y domingo)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-4 clase-viaje">
+                <h4 class="special-offer">Clase Ejecutiva</h4>
+                <img src="assets/clase_ejecutiva.jpg" alt="Clase Ejecutiva">
+                <div class="card-custom">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-users"></i> 60 pasajeros
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-music"></i> Luces, sonido y pantallas
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-chair"></i> Asiento de tela con mesa plegable
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-users"></i> Vagón familiar
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o a la carta (no incluidos en el precio del boleto)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-4 clase-viaje">
+                <h4 class="special-offer">Vagón Bar</h4>
+                <img src="assets/vagon_bar.jpg" alt="Vagón Bar">
+                <div class="card-custom">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-lock"></i> 60 pasajeros
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-music"></i> Luces, sonido y pantallas
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-chair"></i> Asiento de tela con mesa plegable
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-users"></i> Vagón familiar
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cocktail"></i> Variedad de tequilas, cocteles y destilados en barra libre o a la carta (no incluidos en el precio del boleto)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
