@@ -82,6 +82,20 @@
             border-color: #c96a5f;
         }
 
+        .btn-consultar {
+            background: #6ea399;
+            color: white;
+            border: 2px solid #6ea399;
+            width: 250px;
+            /* height: 40px; */
+        }
+
+        .btn-consultar:hover {
+            background: #c96a5f;
+            color: #f4eee1;
+            border-color: #c96a5f;
+        }
+
         .btn-custom-dos {
             /* background: #6ea399; */
             color: white;
@@ -146,13 +160,6 @@
             margin-right: 10px;
             color: #0B2240;
         }
-
-        /* .checked {
-            color: #6ea399;
-        }
-        .unchecked {
-            color: #c96a5f;
-        } */
 
         /* .container {
             display: flex;
@@ -223,7 +230,21 @@
             font-size: 12px;
         }
 
+        /* Tercer vista */
 
+        .section-content {
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+        .image-container {
+            width: 45%;
+            height: 100vh;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
     </style>
 </head>
@@ -251,7 +272,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="tel:3317904289">
+                            <a href="tel:3323094000">
                                 <button class="btn btn-custom">Reservar</button>
                             </a>
                         </div>
@@ -387,12 +408,12 @@
                         </tbody>
                     </table>
                 </div>
-                <a href="tel:3317904289">
+                <a href="tel:3311234455">
                     <button class="btn btn-custom">COMPRAR</button>
                 </a>
 
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 mb-4">
 
                 <h5><span class="secondary-custom fw-bold">TARIFA DE EXPERIENCIA INTEGRAL</span></h5>
                 <div class="table-responsive table-height">
@@ -438,6 +459,29 @@
 
         </div>
 
+    </div>
+
+    <div class="container-fluid p-0 d-flex">
+        <div class="d-flex flex-column justify-content-center px-5" style="width: 55%;">
+            <div class="section-content">
+                <span>El único tren en el destino con</span>
+                <h1 class="fw-bold mb-0 mt-1">VIAJES REDONDOS</h1>
+                <span>Gdl - Teq - Gdl</span>
+                <hr class="my-4" style="border-top: 2px solid #6ea399;">
+                <span>Contamos con salidas los</span>
+                <h2 class="fw-bold">VIERNES, SÁBADOS Y DOMINGOS</h2>
+                <a href="https://www.tequilaexpress.mx/recorridos/grupo-mexico-transportes/" class="btn btn-consultar mb-4" >Consultar Calendario</a>
+                <hr class="my-4" style="border-top: 2px solid #6ea399;">
+                <h4>Llevemos juntos esta experiencia</h4>
+                <h2 class="secondary-custom fw-bold">A TODO EL MUNDO</h2>
+                <h4>Conoce nuestro menú de </h4>
+                <h4 class="fw-bold">tequilas, alimentos y bebidas</h4>
+                <a href="assets/menu.pdf" target="_blank" class="btn btn-custom">MENÚ</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="assets/tren_dron.jpg" alt="Tequila Express">
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
