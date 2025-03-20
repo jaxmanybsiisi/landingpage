@@ -139,6 +139,26 @@
             /* Color de la línea */
         }
 
+        .underline-custom-blue {
+            position: relative;
+            display: inline-block;
+            /* Asegura que el ancho sea el del texto */
+        }
+        
+        .underline-custom-blue::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            /* Ajusta la posición de la línea */
+            width: 100%;
+            /* Mismo ancho que el texto */
+            height: 2px;
+            /* Grosor de la línea */
+            background-color: #0B2240;;
+            /* Color de la línea */
+        }
+
         .card-custom {
             /* background-color: #ffffff; */
             /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -531,16 +551,14 @@
         
         <div class="d-flex flex-column justify-content-center px-5 d-block d-lg-none mb-4">
             <div class="section-content">
-                <span>El único tren en el destino con</span>
+                <h6>El único tren en el destino con</h6>
                 <h1 class="fw-bold mb-0 mt-1">VIAJES REDONDOS</h1>
-                <span>Gdl - Teq - Gdl</span>
-                <hr class="my-1" style="border-top: 2px solid #6ea399;">
-                <span>Contamos con salidas los</span>
+                <h6 class="underline-custom-blue">Gdl - Teq - Gdl</h6>
+                <h6 class="mt-2">Contamos con salidas los</h6>
                 <h2 class="fw-bold">VIERNES, SÁBADOS Y DOMINGOS</h2>
                 <a href="https://www.tequilaexpress.mx/recorridos/grupo-mexico-transportes/" class="btn btn-consultar mb-4" >Consultar Calendario</a>
-                <hr class="my-1" style="border-top: 2px solid #6ea399;">
                 <h4>Llevemos juntos esta experiencia</h4>
-                <h2 class="secondary-custom fw-bold">A TODO EL MUNDO</h2>
+                <h2 class="secondary-custom fw-bold underline-custom-blue">A TODO EL MUNDO</h2>
                 <h4>Conoce nuestro menú de </h4>
                 <h4 class="fw-bold">tequilas, alimentos y bebidas</h4>
                 <a href="assets/menu.pdf" target="_blank" class="btn btn-custom">MENÚ</a>
@@ -583,16 +601,14 @@
         </div>
         <div class="d-flex flex-column justify-content-center px-5 d-none d-lg-block" style="width: 57%;">
             <div class="section-content">
-                <span>El único tren en el destino con</span>
+                <h6>El único tren en el destino con</h6>
                 <h1 class="fw-bold mb-0 mt-1">VIAJES REDONDOS</h1>
-                <span>Gdl - Teq - Gdl</span>
-                <hr class="my-1" style="border-top: 2px solid #6ea399;">
-                <span>Contamos con salidas los</span>
+                <h6 class="underline-custom-blue">Gdl - Teq - Gdl</h6>
+                <h6 class="mt-2">Contamos con salidas los</h6>
                 <h2 class="fw-bold">VIERNES, SÁBADOS Y DOMINGOS</h2>
                 <a href="https://www.tequilaexpress.mx/recorridos/grupo-mexico-transportes/" class="btn btn-consultar mb-4" >Consultar Calendario</a>
-                <hr class="my-1" style="border-top: 2px solid #6ea399;">
                 <h4>Llevemos juntos esta experiencia</h4>
-                <h2 class="secondary-custom fw-bold">A TODO EL MUNDO</h2>
+                <h2 class="secondary-custom fw-bold underline-custom-blue">A TODO EL MUNDO</h2>
                 <h4>Conoce nuestro menú de </h4>
                 <h4 class="fw-bold">tequilas, alimentos y bebidas</h4>
                 <a href="assets/menu.pdf" target="_blank" class="btn btn-custom">MENÚ</a>
