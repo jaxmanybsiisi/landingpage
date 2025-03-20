@@ -272,16 +272,93 @@
             object-fit: cover;
         }
 
+        /* Texto responsivo personalizado*/
+        .responsive-text-xs {
+            font-size: 1rem;
+        }
+
+        .responsive-text-sm {
+            font-size: 1.25rem;
+        }
+
+        .responsive-text-md {
+            font-size: 1.5rem;
+        }
+
+        .responsive-text-lg {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .responsive-text-xs {
+                font-size: 1.1rem;
+            }
+            .responsive-text-sm {
+                font-size: 1.5rem;
+            }
+            .responsive-text-md {
+                font-size: 2rem;
+            }
+            .responsive-text-lg {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* @media (min-width: 992px) {
+            .responsive-text-xs {
+                font-size: 1.2rem;
+            }
+            .responsive-text-sm {
+                font-size: 1.75rem;
+            }
+            .responsive-text-md {
+                font-size: 2.25rem;
+            }
+            .responsive-text-lg {
+                font-size: 3rem;
+            }
+        } */
+
+        /* @media (min-width: 1200px) {
+            .responsive-text-xs {
+                font-size: 1.1rem;
+            }
+            .responsive-text-sm {
+                font-size: 1.5rem;
+            }
+            .responsive-text-md {
+                font-size: 2rem;
+            }
+            .responsive-text-lg {
+                font-size: 2.5rem;
+            }
+        } */
+
+        @media (min-width: 1400px) {
+            .responsive-text-xs {
+                font-size: 1.75rem;
+            }
+            .responsive-text-sm {
+                font-size: 2.25rem;
+            }
+            .responsive-text-md {
+                font-size: 2.25rem;
+            }
+            .responsive-text-lg {
+                font-size: 3.5rem;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
     <div class="video-container">
-        <video autoplay muted loop playsinline>
+        <!-- <video autoplay muted loop playsinline>
             <source src="assets/GMXT_TEQUILA__V1-0010.mov" type="video/mp4">
             Tu navegador no soporta videos HTML5.
-        </video>
+        </video> -->
 
         <div class="video-overlay"></div>
 
@@ -304,16 +381,16 @@
                         </div>
                     </div>
                 </div>
-                <h2>UN VIAJE QUE DEBERÍA TENER </h2>
-                <h1><span class="secondary-custom fw-bold">DENOMINACIÓN DE ORIGEN</span></h1>
-                <h3><span class="underline-custom">Vuelve el mejor</span> tren de la región agavera</h3>
+                <h2 class="responsive-text-md">UN VIAJE QUE DEBERÍA TENER </h2>
+                <h1 class="responsive-text-lg"><span class="secondary-custom fw-bold">DENOMINACIÓN DE ORIGEN</span></h1>
+                <h3 class="responsive-text-md"><span class="underline-custom">Vuelve el mejor</span> tren de la región agavera</h3>
             </header>
             <section class="text-left">
-                <h4>¿Eres <span class="secondary-custom">mayorista</span> o cuentas con una</h4>
-                <h2 class="secondary-custom fw-bold">agencia de viajes ?</h2>
-                <h2 class="fw-bold">¡Tenemos tarifas especiales para ti!</h2>
-                <span>Contáctanos para:</span>
-                <ul>
+                <h4 class="responsive-text-sm">¿Eres <span class="secondary-custom">mayorista</span> o cuentas con una</h4>
+                <h2 class="secondary-custom fw-bold responsive-text-md">agencia de viajes ?</h2>
+                <h2 class="fw-bold responsive-text-md">¡Tenemos tarifas especiales para ti!</h2>
+                <span class="responsive-text-xs">Contáctanos para:</span>
+                <ul class="responsive-text-xs">
                     <li>Realizar un viaje de familiarización para el equipo de ventas</li>
                     <li>Tener una capacitación</li>
                     <li>Obtener materiales para la difusión del viaje</li>
